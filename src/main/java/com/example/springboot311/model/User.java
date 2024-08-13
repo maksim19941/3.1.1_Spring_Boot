@@ -1,27 +1,25 @@
 package com.example.springboot311.model;
 
 
-import jakarta.persistence.*;
-import org.springframework.stereotype.Component;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
 import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
-@Table
-@Component
 public class User implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long Id;
-    @Column
+
     private String name;
 
-    @Column
     private String surname;
 
-    @Column
     private int age;
 
     public User() {

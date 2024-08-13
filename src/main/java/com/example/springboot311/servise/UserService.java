@@ -5,7 +5,6 @@ import com.example.springboot311.model.User;
 import java.util.List;
 
 public interface UserService {
-
     List<User> getListUser();
 
     void save(String name, String surname, int age);
@@ -16,5 +15,5 @@ public interface UserService {
 
     User getUser(long id);
 
-}
 
+}
